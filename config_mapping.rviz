@@ -69,17 +69,7 @@ Visualization Manager:
       Filter (whitelist): ""
       Frame Timeout: 15
       Frames:
-        All Enabled: false
-        base_footprint:
-          Value: false
-        base_laser_link:
-          Value: false
-        base_link:
-          Value: true
-        map:
-          Value: true
-        odom:
-          Value: true
+        All Enabled: true
       Marker Alpha: 1
       Marker Scale: 1
       Name: TF

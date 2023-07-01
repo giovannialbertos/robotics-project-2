@@ -25,7 +25,7 @@ public:
         q.setZ(msg->pose.pose.orientation.z);
         q.setW(msg->pose.pose.orientation.w);
         transform.setRotation(q);
-        tf_odom.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "odom", "base_link"));
+        tf_odom.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "odom", "t265"));
     }
 };
 		

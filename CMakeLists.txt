@@ -128,7 +128,7 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(tf_publisher src/tf_publisher.cpp)
-add_executable(navigation src/navigation.cpp)
+#add_executable(navigation src/navigation.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -141,7 +141,7 @@ add_executable(navigation src/navigation.cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(tf_publisher ${catkin_LIBRARIES})
-target_link_libraries(navigation ${catkin_LIBRARIES})
+#target_link_libraries(navigation ${catkin_LIBRARIES})
 
 #############
 ## Install ##
