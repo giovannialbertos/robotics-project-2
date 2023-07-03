@@ -62,10 +62,10 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate added messages and services with any dependencies listed here
-generate_messages(
-        DEPENDENCIES
-        std_msgs
-)
+#generate_messages(
+        #DEPENDENCIES
+        #std_msgs
+#)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -96,12 +96,6 @@ generate_messages(
 ## LIBRARIES: libraries you create in this project that dependent projects also need
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
-#catkin_package(
-        #  INCLUDE_DIRS include
-        #  LIBRARIES first_project
-        #  CATKIN_DEPENDS roscpp std_msgs message_runtime
-        #  DEPENDS system_lib
-#)
 
 ###########
 ## Build ##
@@ -128,7 +122,7 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(tf_publisher src/tf_publisher.cpp)
-#add_executable(navigation src/navigation.cpp)
+add_executable(navigation src/navigation.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -141,7 +135,7 @@ add_executable(tf_publisher src/tf_publisher.cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(tf_publisher ${catkin_LIBRARIES})
-#target_link_libraries(navigation ${catkin_LIBRARIES})
+target_link_libraries(navigation ${catkin_LIBRARIES})
 
 #############
 ## Install ##

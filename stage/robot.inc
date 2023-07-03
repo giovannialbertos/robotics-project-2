@@ -17,7 +17,7 @@ define robot position
   
   localization "odom"
 
-  odom_error [0.0 0.0  0.00  0.0]
+  odom_error [0.1 0.1  0.00  0.1]
 
   size [ 0.60 0.40 0.50 ]
   origin [ 0.0 0.0 0.0 0.0 ]

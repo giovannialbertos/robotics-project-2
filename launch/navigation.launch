@@ -92,6 +92,7 @@
 		<remap from="scan"                      to="$(arg scan_topic)"/>
 	</node>
 
+	<node name="navigation" pkg="second_project" type="navigation"/>
 
 	<!--  **************** Visualisation ****************  -->
 	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find second_project)/config_nav.rviz"/>
