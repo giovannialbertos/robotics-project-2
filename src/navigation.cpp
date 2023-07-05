@@ -6,6 +6,7 @@
 #include <fstream>
 #include <vector>
 #include <sstream>
+#include "ros/package.h"
 
 class nav_class {
 private:
@@ -55,7 +56,8 @@ int main(int argc, char **argv){
     std::vector<std::vector<std::string>> content;
     std::vector<std::string> row;
     std::string line, word;
-    std::ifstream file("/home/anesanico/robotics/src/second_project/waypoints.csv");
+    std::string path = ros::package::getPath("second_project")+"/waypoints.csv";
+    std::ifstream file(path);
     if(file.is_open())
     {
         while(getline(file, line))
